@@ -5,6 +5,8 @@ Live project for the current batch
 ### 360 Degree Monitoring
 Build an end to end-monitoring system for your server(s)
 
+https://github.com/omkardamame/360-degree-monitoring
+
 
 ## Project 2:
 ### GitHub Aggregator
