@@ -15,3 +15,4 @@
 | AC-GCI-011 | Worker failure leaves a queryable terminal job state with sanitized error information. | Failure test |
 | AC-GCI-012 | Reference environment can be deployed from documented IaC/automation. | Clean deployment evidence |
 | AC-GCI-013 | Test harness demonstrates create -> poll -> summary flow. | Demo |
+| AC-GCI-014 | Running a new analysis for a repository/date range already analyzed produces a new job record without altering or corrupting the results of the earlier job. | DB query comparing both job results |

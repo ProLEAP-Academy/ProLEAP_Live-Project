@@ -22,7 +22,7 @@ Given a repository such as `hashicorp/consul` and a date range, the service shou
       "domain": "example.com",
       "total_commits": 50,
       "unique_contributors": 10,
-      "attribution_confidence": "public-email-domain"
+      "attribution_source": "public-email-domain"
     }
   ]
 }

@@ -87,6 +87,7 @@ flowchart LR
 |   |-- 03-dynamic-etl/
 |   `-- 04-custom-project/
 |-- templates/
+|-- exports/
 |-- legacy/
 `-- .github/
 ```
