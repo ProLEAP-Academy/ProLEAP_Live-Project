@@ -12,12 +12,14 @@ The target is not "finish a tutorial." The target is a solution that can be expl
 
 ## Projects
 
-| # | Project | Primary skills | Level | Main specification |
-|---|---|---|---|---|
-| 1 | **360-Degree Monitoring Platform** | Linux, Prometheus, Grafana, Loki, OpenTelemetry, alerting, runbooks | Intermediate | [Open project](projects/01-360-degree-monitoring/README.md) |
-| 2 | **GitHub Contributor Intelligence Service** | REST APIs, GitHub API, AWS, Python, database, async processing, security | Intermediate/Advanced | [Open project](projects/02-github-contributor-intelligence/README.md) |
-| 3 | **Dynamic ETL Automation Platform** | Linux, Python, Excel processing, SQL, secure ingestion, CI/CD, operations | Intermediate/Advanced | [Open project](projects/03-dynamic-etl/README.md) |
-| 4 | **Custom Live Project** | Problem discovery, architecture, delivery, documentation | Variable | [Open project](projects/04-custom-project/README.md) |
+Each project draws on specific phases of the [foundation curriculum](docs/00-program-overview.md#9-relationship-to-the-proleap-devops-learning-path). Use this to check you have the prerequisites before you start.
+
+| # | Project | Foundation phases | Core stack | Level | Main specification |
+|---|---|---|---|---|---|
+| 1 | **360-Degree Monitoring Platform** | Phase 1 - Bedrock + Phase 4 - Delivery Pipeline | `Linux` `Prometheus` `Node Exporter` `Blackbox Exporter` `Grafana` `Loki` `Alertmanager` `OpenTelemetry` `Runbooks` | Intermediate | [Open project](projects/01-360-degree-monitoring/README.md) |
+| 2 | **GitHub Contributor Intelligence Service** | Phase 2 - Scripting & Logic + Phase 3 - Cloud & IaC + Phase 4 - Delivery Pipeline | `Python` `REST API design` `GitHub REST API` `AWS Lambda` `RDS` `Secrets Manager` `IAM` `Async job processing` `GitHub App auth` | Intermediate/Advanced | [Open project](projects/02-github-contributor-intelligence/README.md) |
+| 3 | **Dynamic ETL Automation Platform** | Phase 1 - Bedrock + Phase 2 - Scripting & Logic + Phase 3 - Cloud & IaC + Phase 4 - Delivery Pipeline | `Linux` `Bash` `Python` `MySQL` `Secure ingestion (SFTP/HTTPS)` `systemd/cron` `CI/CD` | Intermediate/Advanced | [Open project](projects/03-dynamic-etl/README.md) |
+| 4 | **Custom Live Project** | Learner-selected - draws on any phase(s) relevant to the proposal | `Problem discovery` `Architecture design` `Delivery planning` `Documentation` | Variable | [Open project](projects/04-custom-project/README.md) |
 
 ## What every team must submit
 
