@@ -1,0 +1,29 @@
+name: Specification change
+description: Propose a requirement or program-document change
+title: "[Spec] "
+labels: ["specification"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is wrong, outdated, ambiguous or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed change
+    validations:
+      required: true
+  - type: textarea
+    id: traceability
+    attributes:
+      label: Traceability impact
+      description: Which requirement IDs/files are affected? Is anything superseded?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How will the updated requirement be tested?

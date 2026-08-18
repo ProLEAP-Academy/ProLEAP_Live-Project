@@ -1,0 +1,33 @@
+name: Project question / clarification
+description: Ask for clarification without silently changing a requirement
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      options:
+        - 360-Degree Monitoring
+        - GitHub Contributor Intelligence
+        - Dynamic ETL
+        - Custom Project
+        - Program / Templates
+    validations:
+      required: true
+  - type: input
+    id: requirement
+    attributes:
+      label: Requirement ID(s)
+      placeholder: e.g. DETL-TR-012
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to do and what is unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What have you already checked or tried?
