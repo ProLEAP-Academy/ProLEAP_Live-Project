@@ -1,12 +1,10 @@
 # ProLEAP Academy - Live Projects 2026
 
-Production-style learning projects for Cloud, DevOps, Platform Engineering, Automation, Observability and DevSecOps.
-
-> **Repository status:** Modernized 2026 edition. The original project documents are preserved under [`legacy/`](legacy/) for traceability. The Markdown documents in this repository are the current source of truth.
+This repository holds the live projects for ProLEAP Academy learners working in Cloud, DevOps, Platform Engineering, Automation, Observability and DevSecOps.
 
 ## Purpose
 
-This repository converts classroom knowledge into project-delivery evidence. Each project is designed to make learners practice the full engineering lifecycle:
+Each project runs you through the full engineering lifecycle the way a real team executes it - not a tutorial:
 
 **Discovery -> requirements -> solution intent -> architecture -> implementation -> source control -> CI/CD -> testing -> observability -> security -> operations -> demo -> retrospective**
 
@@ -116,20 +114,20 @@ flowchart LR
 - Do not hard-code credentials, tokens, IPs, passwords or private keys.
 - Do not upload production/customer data to this training repository.
 
-## Suggested technology policy
+## Choosing your tools
 
-The project specifications define capabilities, not a single mandatory toolchain. Use current stable releases and record exact versions in the project `VERSION_MATRIX.md` or lockfiles.
+The project specs describe what your solution needs to do, not a fixed list of tools you must use. Pick current, stable releases and write down the exact versions you used in your project's `VERSION_MATRIX.md` or lockfiles.
 
-Where a project has a reference architecture, alternatives are allowed only if the team documents the trade-off and still satisfies the acceptance criteria.
+If a project defines a reference architecture, you may substitute another approach provided you document the trade-off and still meet the acceptance criteria.
 
-## Legacy compatibility
+## About the older project documents
 
-The previous repository contained four primary documents and a short README. All original PDFs are retained under [`legacy/`](legacy/). The modernized documents preserve the original intent and requirements while resolving ambiguity, replacing insecure/outdated defaults, and adding missing production requirements such as API contracts, idempotency, observability, security, testing, recovery and traceability.
+This repository originates from an earlier, shorter version containing four PDF documents and a brief README. Those originals are preserved under [`legacy/`](legacy/) for reference. The Markdown documents here are the current working specs: they retain the original requirements while adding what the old PDFs left out - API contracts, error handling, observability, security and testing - so each project has enough detail to build against.
 
-See [Modernization and Traceability](docs/09-modernization-and-traceability.md).
+To see how a specific old requirement maps to the new docs, check [Modernization and Traceability](docs/09-modernization-and-traceability.md).
 
-Shareable PDF versions of the main specifications are available under [`exports/`](exports/).
+PDF versions of the main specs are available under [`exports/`](exports/) for offline reading or printing.
 
-## Ownership
+## Questions and changes
 
-ProLEAP Academy live-project material. Repository maintainers may revise requirements between cohorts; changes must be recorded in [`CHANGELOG.md`](CHANGELOG.md).
+This is ProLEAP Academy live-project material, maintained across cohorts. Record any requirement changes in [`CHANGELOG.md`](CHANGELOG.md).

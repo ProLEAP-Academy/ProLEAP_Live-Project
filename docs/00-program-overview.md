@@ -135,4 +135,15 @@ Screenshots alone are not enough if the result can be automatically tested.
 
 ## 9. Relationship to the ProLEAP DevOps learning path
 
-The live projects are intended to reinforce the same engineering chain used in the broader learning plan: Linux -> Git -> automation -> CI/CD -> containers -> IaC -> cloud -> platform operations -> observability -> security. The projects should therefore generate portfolio artifacts, not isolated exercises.
+The live projects build on the foundation curriculum, which takes you from the command line to a working GitOps pipeline:
+
+| Phase | Focus | Outcome |
+|---|---|---|
+| Phase 1 - The Bedrock | Linux fundamentals (filesystem, permissions, process management, working over SSH) and Git/GitHub (branching strategies, pull requests, GitOps prep) | Navigate the terminal and manage code like an engineer |
+| Phase 2 - Scripting & Logic | Bash scripting (variables, loops, remote execution) and Python for DevOps (Boto3, OS automation), using AI assistance to scaffold logic without losing understanding | Move beyond manual tasks and automate the repetitive |
+| Phase 3 - Cloud & Infrastructure as Code | AWS fundamentals (EC2, S3, RDS, IAM, regions/AZs), Terraform (state, modules, HCL) and Ansible (idempotent playbooks) | Provision and configure infrastructure repeatably instead of by hand |
+| Phase 4 - The Delivery Pipeline | CI/CD (Jenkins, GitHub Actions, GitLab CI) and observability (Prometheus for metrics, Grafana for dashboards, Loki for logs) | Build pipelines that deploy code and tell you when something breaks |
+| Phase 5 - Modern Orchestration | Docker (images, multi-stage builds), Kubernetes (pods, deployments, services, ingress, scaling) and Helm | Containerize applications and orchestrate them at scale |
+| Capstone - GitOps in Action | An end-to-end workflow: push -> CI -> Terraform + Docker build -> Kubernetes -> live monitoring | A real, non-trivial project for your portfolio |
+
+If you have not completed this foundation, or equivalent experience, do so before or alongside your first live project. The live projects in this repository assume that baseline and take it further: instead of a guided lab, you own discovery, design, build and operations end to end, and you generate portfolio artifacts rather than isolated exercises.
