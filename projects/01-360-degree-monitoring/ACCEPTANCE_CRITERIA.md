@@ -12,3 +12,4 @@
 | AC-MON-008 | Monitoring stack can be recreated from repository instructions/configuration. | Clean redeploy demonstration |
 | AC-MON-009 | No real secret exists in version-controlled files. | Secret scan/review |
 | AC-MON-010 | Team diagnoses at least one seeded incident from telemetry before being told the injected fault. | Live demo |
+| AC-MON-011 | A trace for a sample request is visible in the tracing backend and can be correlated with the logs/metrics for the same request or time window. | Trace query + correlated log/metric evidence |

@@ -8,7 +8,7 @@ Design and implement an end-to-end observability platform for one or more Linux-
 - Is the host healthy?
 - Is the application healthy?
 - What changed before the failure?
-- What logs and metrics explain the failure?
+- What logs, metrics and traces explain the failure?
 - Who should be alerted?
 - What action should the operator take?
 
@@ -23,8 +23,9 @@ A reference open-source stack is:
 - Blackbox Exporter for endpoint/synthetic probes;
 - Grafana for dashboards;
 - Loki for centralized logs;
+- Grafana Tempo (or Jaeger) for distributed traces, correlated with logs and metrics via Grafana;
 - Alertmanager and/or Grafana Alerting for notification routing;
-- OpenTelemetry Collector where application telemetry or vendor-neutral collection is useful.
+- OpenTelemetry Collector as the vendor-neutral receiver/processor for application metrics, logs and traces.
 
 Alternatives are allowed if the same capabilities and acceptance criteria are met.
 
@@ -58,7 +59,7 @@ The team must demonstrate:
 
 ## Stretch goals
 
-- traces via OpenTelemetry;
+- trace-to-log-to-metric correlation across multiple services, not just one;
 - SLO/error-budget dashboard;
 - multi-host discovery;
 - Kubernetes deployment;

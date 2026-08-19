@@ -7,13 +7,16 @@ flowchart LR
     H[Linux Host] -->|host metrics| NE[Node Exporter]
     APP[Application] -->|metrics / OTLP| OTEL[OpenTelemetry Collector]
     APP -->|logs| LC[Log Collector / OTel]
+    APP -->|traces / OTLP| OTEL
     BB[Blackbox Exporter] -->|probe| APP
     NE --> P[Prometheus]
     BB --> P
     OTEL --> P
+    OTEL --> T[Tempo / Jaeger]
     LC --> L[Loki]
     P --> G[Grafana]
     L --> G
+    T --> G
     P --> AM[Alertmanager]
     AM --> N[Notification Target]
     G --> O[Operator]
@@ -30,9 +33,13 @@ Prometheus should scrape infrastructure/application metrics. Node Exporter is ap
 
 Centralize logs in Loki or an equivalent open-source backend. Do not use high-cardinality or sensitive values as labels.
 
+### Traces
+
+Send application traces to Tempo (or Jaeger) via the OpenTelemetry Collector. Configure Grafana to correlate a trace with the logs and metrics for the same time window and service, so an operator can go from "this request was slow" to "this is the span/log line that explains why" without switching tools. Traces matter most once a request crosses more than one service; for a single-service lab, exemplar-based correlation between a Prometheus metric spike and the matching trace is enough to demonstrate the pattern.
+
 ### Telemetry collection
 
-OpenTelemetry Collector may be used as a vendor-neutral receiver/processor/exporter layer, especially for application telemetry.
+OpenTelemetry Collector may be used as a vendor-neutral receiver/processor/exporter layer for application metrics, logs and traces.
 
 ### Dashboards as code
 
@@ -58,7 +65,7 @@ Deploy components to Kubernetes using Helm/operators/manifests. This is an exten
 
 ## Security boundaries
 
-- Do not expose Prometheus/Loki directly to the public internet.
+- Do not expose Prometheus/Loki/Tempo directly to the public internet.
 - Protect Grafana administrative access.
 - Store notification credentials outside Git.
 - Restrict exporter/collector ports to the monitoring network where possible.

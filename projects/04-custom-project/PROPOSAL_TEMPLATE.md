@@ -59,6 +59,7 @@ Mark the areas included:
 - [ ] Security
 - [ ] Automation/integration
 - [ ] Troubleshooting/operations
+- [ ] AI/ML infrastructure (LLM serving, RAG, vector databases, inference/GPU, model/prompt observability)
 
 ## 12. Draft architecture
 

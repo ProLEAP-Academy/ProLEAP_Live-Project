@@ -20,7 +20,8 @@ The proposed project must include at least four of these dimensions:
 - observability;
 - security controls;
 - automation/integration;
-- troubleshooting/operations.
+- troubleshooting/operations;
+- AI/ML infrastructure (LLM serving, RAG pipelines, vector databases, inference or GPU scheduling, model/prompt observability).
 
 A purely static website, one-off script, slide deck or CRUD tutorial is normally insufficient unless the proposal adds meaningful delivery/operations depth.
 

@@ -41,6 +41,12 @@ flowchart LR
 - Pin the GitHub REST API version in requests and test upgrades.
 - Prefer GitHub App installation authentication for automation.
 
+## REST vs GraphQL
+
+The reference flow above uses the REST API, but GitHub's GraphQL API is often a better fit for this specific workload: one GraphQL query can walk multiple branches' commit history with cursor pagination and return only the fields needed for deduplication and attribution, instead of one REST request per page per branch. That materially reduces the request volume against the same primary rate limit this project already has to manage.
+
+REST remains the simpler choice for a first implementation, and some data (for example certain commit author metadata) is easier to reason about through REST. The Solution Intent must state which API was chosen and why - the same way it must justify the Lambda vs container worker choice below.
+
 ## Worker choice
 
 ### Lambda

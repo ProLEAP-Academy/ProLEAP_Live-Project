@@ -46,9 +46,11 @@ Operations teams require a single, repeatable way to detect service degradation,
 | MON-FR-009 | Expose health status for the monitoring components themselves. | Must |
 | MON-FR-010 | Demonstrate a controlled failure and recovery while telemetry captures the incident. | Must |
 | MON-FR-011 | Record deployment/release annotations or equivalent change context on dashboards. | Should |
-| MON-FR-012 | Collect application metrics and/or traces through OpenTelemetry. | Should |
+| MON-FR-012 | Collect application traces through OpenTelemetry and store them in a tracing backend (for example Grafana Tempo or Jaeger), correlated with logs and metrics for the same request/service. | Should |
 | MON-FR-013 | Provide service-level indicators such as availability, latency or error rate. | Should |
 | MON-FR-014 | Support more than one monitored host through repeatable configuration. | Should |
+
+Traces are what make this genuinely "360-degree": metrics tell you something is wrong, logs and traces tell you where and why. A project that only implements metrics and logs has covered two of the three observability pillars and should say so explicitly rather than claim full coverage.
 
 ## 5. Non-functional requirements
 
