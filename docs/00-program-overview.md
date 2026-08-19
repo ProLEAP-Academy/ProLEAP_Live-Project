@@ -1,6 +1,6 @@
 # Program Overview
 
-## 1. Objective
+## Objective
 
 The ProLEAP Academy Live Projects program is designed to train learners to operate like project engineers rather than tutorial followers.
 
@@ -11,7 +11,7 @@ Each team must demonstrate four capabilities:
 3. **Build and operate the solution** using repeatable engineering practices.
 4. **Explain and defend the solution** through documentation, evidence and a live demo.
 
-## 2. Expected learning outcomes
+## Expected learning outcomes
 
 By the end of a project, a learner should be able to:
 
@@ -28,7 +28,7 @@ By the end of a project, a learner should be able to:
 - demonstrate rollback/recovery;
 - present the solution to a technical and non-technical audience.
 
-## 3. Project lifecycle
+## Project lifecycle
 
 | Phase | Primary output | Exit condition |
 |---|---|---|
@@ -42,7 +42,7 @@ By the end of a project, a learner should be able to:
 | Acceptance | UAT/demo | Stakeholder can verify expected outcome |
 | Retrospective | Lessons + improvement actions | Major decisions and failures are documented |
 
-## 4. Roles
+## Roles
 
 A small team may combine roles, but responsibilities must remain visible.
 
@@ -71,7 +71,7 @@ A small team may combine roles, but responsibilities must remain visible.
 
 For a two-person team, combine roles deliberately and document who owns each responsibility.
 
-## 5. Minimum project artifacts
+## Minimum project artifacts
 
 Every project repository should contain at least:
 
@@ -96,7 +96,7 @@ project/
 `-- CHANGELOG.md
 ```
 
-## 6. Delivery rules
+## Delivery rules
 
 - No implementation begins before a minimally reviewable Solution Intent exists.
 - A requirement without an acceptance method is incomplete.
@@ -106,7 +106,7 @@ project/
 - A secret in source control is an automatic security failure until rotated and remediated.
 - A demo must include at least one controlled failure and recovery path, not only the happy path.
 
-## 7. Scope control
+## Scope control
 
 Teams should use MoSCoW priority:
 
@@ -117,7 +117,7 @@ Teams should use MoSCoW priority:
 
 Do not expand scope just to add more tools. A smaller system with strong tests, observability, security and recovery is better than a broad but fragile demo.
 
-## 8. Evidence policy
+## Evidence policy
 
 Acceptable evidence includes:
 
@@ -133,7 +133,7 @@ Acceptable evidence includes:
 
 Screenshots alone are not enough if the result can be automatically tested.
 
-## 9. Relationship to the ProLEAP DevOps learning path
+## Relationship to the ProLEAP DevOps learning path
 
 The live projects build on the foundation curriculum, which takes you from the command line to a working GitOps pipeline:
 

@@ -1,6 +1,6 @@
 # SCQ Discovery Framework
 
-## 1. Purpose
+## Purpose
 
 SCQ is a structured way to discover the real problem before proposing a technical solution.
 
@@ -10,7 +10,7 @@ SCQ is a structured way to discover the real problem before proposing a technica
 
 The older SCQ material focused mainly on cost, time and tool sprawl. The modern framework retains that intent but adds measurable outcomes, stakeholders, constraints, evidence and decision criteria.
 
-## 2. The rule
+## The rule
 
 Do not start SCQ with a preferred technology.
 
@@ -24,7 +24,7 @@ Better discovery:
 
 Technology belongs after the problem is understood.
 
-## 3. Situation
+## Situation
 
 Capture factual current-state information.
 
@@ -51,7 +51,7 @@ Example:
 
 > The analytics team receives a ZIP archive containing multiple Excel workbooks each month. An analyst manually extracts quarterly values from Empirical and Regression sheets, combines them into an output workbook and updates a database. The process depends on spreadsheet interpretation and currently has no automated validation, rerun control or operational monitoring.
 
-## 4. Challenge / Complication
+## Challenge / Complication
 
 Describe the measurable impact of the current situation.
 
@@ -72,7 +72,7 @@ Example:
 
 > Manual extraction is slow, difficult to audit and vulnerable to incorrect cell/sheet interpretation. Same-day reruns can create duplicate or inconsistent data, and failures are not centrally observable. The business requires a repeatable end-to-end process that completes within 30 minutes and preserves data integrity.
 
-## 5. Question
+## Question
 
 Questions must close information gaps that materially affect design or acceptance.
 
@@ -115,7 +115,7 @@ Questions must close information gaps that materially affect design or acceptanc
 - What CI/CD platform is allowed?
 - What is the rollback expectation?
 
-## 6. SCQ output format
+## SCQ output format
 
 Each discovery should end with this concise structure:
 
@@ -145,7 +145,7 @@ Explicit exclusions.
 ### Decision Criteria
 How alternatives will be compared: security, simplicity, cost, portability, recovery, performance, maintainability, etc.
 
-## 7. Discovery quality gate
+## Discovery quality gate
 
 SCQ is complete only when the team can answer:
 
@@ -159,7 +159,7 @@ SCQ is complete only when the team can answer:
 
 If these cannot be answered, implementation is premature.
 
-## 8. Example - tool sprawl
+## Example - tool sprawl
 
 ### Situation
 A team uses several independent tools that produce overlapping operational data. Each tool has separate access control, dashboards and maintenance overhead.
@@ -179,6 +179,6 @@ Costs are duplicated, incident investigation requires switching between tools, o
 ### Desired outcome
 Reduce duplicated operational tooling without reducing required visibility, security or supportability.
 
-## 9. Template
+## Template
 
 Use [`../templates/SCQ_TEMPLATE.md`](../templates/SCQ_TEMPLATE.md) for project work.

@@ -12,7 +12,7 @@ The target is not "finish a tutorial." The target is a solution that can be expl
 
 ## Projects
 
-Each project draws on specific phases of the [foundation curriculum](docs/00-program-overview.md#9-relationship-to-the-proleap-devops-learning-path). Use this to check you have the prerequisites before you start.
+Each project draws on specific phases of the [foundation curriculum](docs/00-program-overview.md#relationship-to-the-proleap-devops-learning-path). Use this to check you have the prerequisites before you start.
 
 | # | Project | Foundation phases | Core stack | Level | Main specification |
 |---|---|---|---|---|---|

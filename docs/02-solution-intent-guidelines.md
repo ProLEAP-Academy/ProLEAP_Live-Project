@@ -1,6 +1,6 @@
 # Solution Intent Guidelines
 
-## 1. Purpose
+## Purpose
 
 A Solution Intent is the reviewable contract between the problem and the implementation.
 
@@ -8,11 +8,11 @@ It explains **what will be built, why this design is appropriate, what assumptio
 
 It is not a marketing proposal and it is not a low-level implementation manual.
 
-## 2. When to create it
+## When to create it
 
 Create the first version after SCQ/discovery and before significant implementation. Update it when major assumptions or architecture decisions change.
 
-## 3. Required structure
+## Required structure
 
 ### 3.1 Document control
 
@@ -247,11 +247,11 @@ The final section must link back to requirements and define evidence.
 
 Record reviewer decision and conditions.
 
-## 4. Diagrams
+## Diagrams
 
 Use Mermaid, diagrams.net, PlantUML or another versionable format where practical. A useful diagram shows boundaries, trust zones, major data paths and dependencies rather than decorative icons.
 
-## 5. Quality criteria
+## Quality criteria
 
 A Solution Intent is ready for approval when:
 
@@ -265,6 +265,6 @@ A Solution Intent is ready for approval when:
 - estimate includes dependencies and assumptions;
 - rollback/recovery is defined where failure matters.
 
-## 6. Template
+## Template
 
 Use [`../templates/SOLUTION_INTENT_TEMPLATE.md`](../templates/SOLUTION_INTENT_TEMPLATE.md).

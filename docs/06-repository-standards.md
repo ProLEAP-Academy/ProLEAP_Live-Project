@@ -1,6 +1,6 @@
 # Repository Standards
 
-## 1. Branching
+## Branching
 
 Recommended for student teams:
 
@@ -10,7 +10,7 @@ Recommended for student teams:
 
 Avoid long-running personal branches that are integrated only at the end.
 
-## 2. Commit style
+## Commit style
 
 Prefer small commits with an imperative subject.
 
@@ -24,7 +24,7 @@ docs: record decision to use SFTP instead of FTP
 test: cover same-day rerun idempotency
 ```
 
-## 3. Pull requests
+## Pull requests
 
 Each PR should state:
 - problem/change;
@@ -33,18 +33,18 @@ Each PR should state:
 - operational/security impact;
 - rollback note if deployment behavior changes.
 
-## 4. Configuration
+## Configuration
 
 - No credentials in code.
 - Use environment variables or configuration files for deploy-time values.
 - Provide safe examples.
 - Validate required configuration at startup.
 
-## 5. Documentation
+## Documentation
 
 Prefer Markdown and Mermaid so documentation changes can be reviewed in Git.
 
-## 6. Versioning
+## Versioning
 
 Use semantic versioning for released application artifacts where practical:
 
@@ -52,7 +52,7 @@ Use semantic versioning for released application artifacts where practical:
 
 Record exact runtime/tool versions in `VERSION_MATRIX.md` or lockfiles rather than relying on "latest" in deployment code.
 
-## 7. Project README minimum
+## Project README minimum
 
 Every implementation repo should include:
 
