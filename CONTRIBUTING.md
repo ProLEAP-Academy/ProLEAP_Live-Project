@@ -2,6 +2,8 @@
 
 This repository is used for training material and cohort project specifications.
 
+For a non-trivial requirement or program-document change, open an issue with the **Specification change** template first - it captures the traceability impact reviewers need before you put time into a PR.
+
 ## Change rules
 
 1. Do not silently delete or weaken an existing business requirement.

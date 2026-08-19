@@ -1,0 +1,21 @@
+# Normalize line endings to LF on checkin, matching .editorconfig's end_of_line = lf.
+* text=auto eol=lf
+
+# Explicit text types
+*.md text eol=lf
+*.csv text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+
+# Binary files - do not normalize
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.xlsx binary
+*.xls binary

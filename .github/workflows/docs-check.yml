@@ -1,0 +1,51 @@
+name: Docs check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  markdown-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check relative Markdown links resolve
+        shell: bash
+        run: |
+          set -uo pipefail
+          broken=0
+          while IFS= read -r -d '' file; do
+            dir=$(dirname "$file")
+            while IFS= read -r link; do
+              case "$link" in
+                http://*|https://*|mailto:*|"#"*) continue ;;
+              esac
+              target="${link%%#*}"
+              [ -z "$target" ] && continue
+              resolved=$(cd "$dir" 2>/dev/null && realpath -m "$target" 2>/dev/null || true)
+              if [ -z "$resolved" ] || [ ! -e "$resolved" ]; then
+                echo "BROKEN LINK: $file -> $link"
+                broken=1
+              fi
+            done < <(grep -oE '\]\([^)]+\)' "$file" | sed -E 's/^\]\(//; s/\)$//')
+          done < <(find . -name '*.md' -not -path './legacy/*' -not -path './.git/*' -print0)
+          exit "$broken"
+
+  csv-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate CSV templates have consistent column counts
+        shell: bash
+        run: |
+          set -uo pipefail
+          status=0
+          for f in templates/*.csv; do
+            echo "Checking $f"
+            awk -F',' 'NR==1 {cols=NF} NF!=cols {print "Row " NR " has " NF " columns, expected " cols; bad=1} END {exit bad+0}' "$f" || status=1
+          done
+          exit "$status"
